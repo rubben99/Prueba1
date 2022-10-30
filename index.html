@@ -1,10 +1,59 @@
-<html>
-    <header>
-        <h2>Cabecera</h2>
-    </header>
-    <body>
-        <h1>Hola prueba1
-            recien retocado en el visual code
-        </h1>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PajaroAzul</title>
+    <script src="js/Juego.js" defer></script> 
+    <style>
+         body{
+            cursor: url("images/descarga.png"),crosshair;
+            overflow-y: hidden;
+            overflow-x: hidden;}
+        .main{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .main img{
+            width: 100%;
+            height: 100%;
+        }
+        .niveles{
+            position: absolute;
+            width: 60%;
+            height: 10%;
+            border:2px solid black;
+            top: 90%;
+            padding-left: 35%;
+            margin-left: 2%;
+        }
+        .niveles div{
+            float: left;
+            border:2px solid black;
+            background-color: lightskyblue;
+            margin-right: 3%;
+        }
+        .puntos{
+            position: absolute;
+            border:2px solid black;
+            width: 10%;
+            height: 8%;
+            top: 90%;
+            left:80%
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main"><img src="images/fondo.jpg"</div>
+    <div class="niveles">
+        <div><input type="button" id="r1" value="Nivel-1"></div>
+        <div><input type="button" id="r2" value="Nivel-2"></div>
+        <div><input type="button" id="r3" value="Nivel-3"></div>
+        <div><input type="button" id="r4" value="Nivel-4"></div>
+        <div><input type="button" id="r5" value="Nivel-5"></div>
+    </div>
+    <div class="puntos"><a>Puntos:</a><a id="9999"></a></div>
+</body>
 </html>
